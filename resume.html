@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)https://mszep.github.io/pandoc_resume/resume.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+   *  * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *   *
+   *    * CSS for making a resume with pandoc. Inspired by moderncv.
+   *     *
+   *      * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   *       * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   *        */
+  
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+  
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  
+  /* Titles of categories */
+  h2 {
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      background-color: #9CB770;
+  }
+  
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+  
+  /* Links */
+  a {
+      text-decoration: none;
+  }
+  
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+  
+  table {
+      width: 100%;
+      border-top: solid;
+      border-bottom: solid;
+      border-color:#999999;
+  }
+  </style>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+<h1 id="johnny-coder">楼虎彪</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">所在地: 北京</td>
+<td align="right">louhubiao@hotmail.com</td>
+</tr>
+<tr class="even">
+<td align="left">学历: 研究生</td>
+<td align="right"><span class="citation">15682058207</span></td>
+</tbody>
+</table>
+<h2 id="education">教育背景</h2>
+<dl>
+<dt>2014-2017</dt>
+<dd><p><strong>研究生, 计算机科学与技术</strong>; 西南交通大学(成都)</p>
+</dd>
+<dt>2014-2014</dt>
+<dd><p><strong>本科, 计算机科学与技术</strong>; 电子科技大学(成都)</p>
+</dd>
+</dl>
+<h2 id="experience">实习经历</h2>
+<p><strong>微软亚洲研究院-学术合作部:</strong></p>
+<p>负责技术支持，包含相关.Net网站开发与维护，参与策划编程之美2016挑战赛，参与微软2016hackathon并获得最具影响力奖.</p>
+<p><strong>英特尔产品（成都）有限公司:</strong></p>
+<p>负责开发与维护免税进口跟踪系统(Duty Free Import Tracking System)，该系统使用.Net平台，用于追踪英特尔成都的资产变化情况.</p>
+<h2 id="technical-experience">项目经历</h2>
+<dl>
+<dt><a href="https://github.com/ambleLou">ToyGE</a></dt>
+<dd><p>使用C#语言实现的一个键值对内存数据，有效数据的占有率接近70%，对100G数据搜索耗时为毫秒级别.</p>
+<ul>
+<li>手动对内存进行分配和释放，实现了更紧凑的内存模型.</li>
+<li>接近C#原生对象的访问方式.</li>
+<li>多种可选的索引结构.</li>
+<li>自动生成对象访问代码.</li>
+<li>分布式存储与访问(实现中)</li>
+</ul>
+</dd>
+<dt><a href="https://github.com/ambleLou/BitCoinCheck">BitCoinCheck</a></dt>
+<dd><p>用于实时查询blocktrain中可疑交易，特点是将blocktrain放置在微软开发的分布式内存图数据库GraphEngine中，加快了实时查询和实时统计的速度.(C#)</p>
+</dd>
+<dt><a href="https://github.com/ambleLou/KeyValueIndexs">KeyValueIndexs</a></dt>
+<dd><p>此程序为ToyGE的子项目，用于比较键值数据库各类索引结构的优劣，包括B-Tree, ADT(adaptive radix tree),HAT-trie.(C#)</p>
+</dd>
+<dt><a href="https://github.com/ambleLou/BOP2016">BOP2016</a></dt>
+<dd><p>编程之美2016复赛标准程序，目的是找到微软学术搜索数据库中任意两个节点之间的所有路径，我通过压缩查询次数加快速度，此程序作为制定最终评分的参考.(.Net)</p>
+</dd>
+<dt><a href="https://github.com/ambleLou/StaticORMbyCSharp">StaticORM</a></dt>
+<dd><p>此程序接收数据库的连接字段，然后自动生成对于所有表的基本操作文件，包括增删改查以及分页等功能，使用此程序规范了英特尔成都的开发流程.(C#)</p>
+</dd>
+<dt>团队项目</dt>
+<dd>
+  <p><strong><a href="">Emotion for sign language</a>:</strong> 使用微软认知服务的表情识别API，增加了手语识别的准确率.</p>
+  <p><strong><a href="https://github.com/ambleLou/ShijianWeChat">实兼公众号</a>:</strong> 实现兼职的发布与报名，我负责前端呈现.</p>
+</dd>
+<dt>其他项目</dt>
+<dd>
+  <p><strong><a href="">DataExchange</a>:</strong> 通过解析SQL Server日志，得到近期修改的数据，并传输到远程服务器.</p>
+  <p><strong><a href="https://github.com/ambleLou/-XML-">XMLAnalysis</a>:</strong> 封装C#对于XML访问的接口，模拟数据库的访问方式对XML文件进行读写.</p>
+  <p><strong><a href="https://github.com/ambleLou/LexSimulator">LexSimulator</a>:</strong> 使用C语言实现的词法分析器，功能类似lex.</p>
+</dd>
+</dl>
+<h2 id="extra-section-call-it-whatever-you-want">个人信息</h2>
+<ul>
+<li><p>技能: <strong>C#</strong>/<strong>.Net</strong>/<strong>SQL Server</strong>/<strong>内存数据库</strong>/前端开发/Shell/C/Java/Python/iOS</p>
+</li>
+<li><p>课程: 人们一等奖学金/通过CET-4</p></li>
+<li><p>个人主页: <a href="https://github.com/ambleLou">https://github.com/ambleLou</a></p></li>
+</ul>
+</body></html>
