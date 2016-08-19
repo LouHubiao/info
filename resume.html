@@ -30,6 +30,7 @@
       font-size: 55px;
       color: #757575;
       text-align:center;
+      margin-top: 0px;
       margin-bottom:15px;
   }
   
@@ -70,6 +71,7 @@
   /* Links */
   a {
       text-decoration: none;
+      color: black;
   }
   
   /* Horizontal separators */
@@ -82,6 +84,17 @@
       border-top: solid;
       border-bottom: solid;
       border-color:#999999;
+  }
+
+  .odd{
+    font-weight: bold;
+  }
+  .even{
+    font-weight: bold;
+  }
+  ul{
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
   </style>
 <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
@@ -103,32 +116,31 @@
 <table>
 <tbody>
 <tr class="odd">
-<td align="left">所在地: 北京</td>
-<td align="right">louhubiao@hotmail.com</td>
+<td align="left">所在地:&nbsp;北京</td>
+<td align="right">邮箱:louhubiao@hotmail.com</td>
 </tr>
 <tr class="even">
-<td align="left">学历: 研究生</td>
-<td align="right"><span class="citation">15682058207</span></td>
+<td align="left">学历:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;研究生</td>
+<td align="right"><span class="citation">电话:15682058207</span></td>
 </tbody>
 </table>
 <h2 id="education">教育背景</h2>
 <dl>
-<dt>2014-2017</dt>
-<dd><p><strong>研究生, 计算机科学与技术</strong>; 西南交通大学(成都)</p>
+<dt style="font-weight: normal;">2014-2017</dt>
+<dd><p>研究生, 计算机科学与技术; 西南交通大学(成都)</p>
 </dd>
-<dt>2014-2014</dt>
-<dd><p><strong>本科, 计算机科学与技术</strong>; 电子科技大学(成都)</p>
+<dt style="font-weight: normal;">2014-2014</dt>
+<dd><p>本科, 计算机科学与技术; 电子科技大学(成都)</p>
 </dd>
 </dl>
-<h2 id="experience">实习经历</h2>
-<p><strong>微软亚洲研究院-学术合作部:</strong></p>
-<p>负责技术支持，包含相关.Net网站开发与维护，参与策划编程之美2016挑战赛，参与微软2016hackathon并获得最具影响力奖.</p>
-<p><strong>英特尔产品（成都）有限公司:</strong></p>
-<p>负责开发与维护免税进口跟踪系统(Duty Free Import Tracking System)，该系统使用.Net平台，用于追踪英特尔成都的资产变化情况.</p>
+<h2 id="experience1">实习经历-微软亚洲研究院</h2>
+<p>在学术合作部负责技术支持，包含.Net网站开发与维护；参与微软2016Hackathon，获得最具影响力奖；开发ToyGE分布式内存数据库，降低内存的占用量；开发基于DocumentDB的图数据库插件，为DocumentDB添加图操作接口.</p>
+<h2 id="experience1">实习经历-英特尔（成都）</h2>
+<p>负责开发与维护免税进口跟踪系统(DFIT)，该系统使用.Net平台，用于追踪英特尔成都的资产变化情况.</p>
 <h2 id="technical-experience">项目经历</h2>
 <dl>
 <dt><a href="https://github.com/ambleLou">ToyGE</a></dt>
-<dd><p>C#语言实现的一个key-value内存数据，有效数据的占有率接近70%，对100G数据搜索耗时为毫秒级别。特点：</p>
+<dd><p>C#语言实现的一个key-value内存数据库，有效数据的占有率接近70%，对100G数据搜索耗时为毫秒级别。特点：
 <ul>
 <li>手动对内存进行分配和释放，实现了更紧凑的内存模型.</li>
 <li>接近C#原生对象的访问方式.</li>
@@ -136,23 +148,24 @@
 <li>自动生成对象访问代码.</li>
 <li>分布式存储与访问</li>
 </ul>
+</p>
 </dd>
 <dt><a href="https://github.com/ambleLou/BitCoinCheck">BitCoinCheck</a></dt>
-<dd><p>实时查询比特币blocktrain中可疑交易，特点是将blocktrain放置在微软开发的分布式内存图数据库GraphEngine中，加快了实时查询和实时统计的速度.(C#)</p>
+<dd><p>实时查询比特币blocktrain中可疑交易，特点是将blocktrain放置在微软的分布式内存图数据库GraphEngine中，加快了实时查询和实时统计的速度.(C#)</p>
 </dd>
 <dt><a href="https://github.com/ambleLou/KeyValueIndexs">KeyValueIndexs</a></dt>
-<dd><p>ToyGE的子项目，用于比较键值数据库各类索引结构的优劣，重写B-Tree, ADT(adaptive radix tree),LSM等算法.(C#)</p>
+<dd><p>ToyGE子项目，用于比较键值数据库各类索引结构的优劣，重写了B-Tree, ADT(adaptive radix tree),LSM等算法.(C#)</p>
 </dd>
 <dt><a href="https://github.com/ambleLou/BOP2016">BOP2016</a></dt>
-<dd><p>编程之美2016复赛标准程序，目的是找到微软学术搜索数据库中任意两个节点之间的所有路径，我通过压缩查询次数加快速度。此程序作为最终评分的标准.(.Net)</p>
+<dd><p>编程之美2016复赛标准程序，找到微软学术搜索数据库中任意两个节点之间的所有路径，我通过压缩查询次数加快速度。此程序作为比赛最终评分的标准.(.Net)</p>
 </dd>
 <dt><a href="https://github.com/ambleLou/StaticORMbyCSharp">StaticORM</a></dt>
-<dd><p>静态ORM，此接收数据库的连接字段，然后自动生成对于所有表的基本操作文件，包括增删改查以及分页等功能，此程序规范了英特尔成都的开发流程.(C#)</p>
+<dd><p>DFIT子项目，此静态ORM接收数据库的连接字段，然后自动生成对于所有表的操作代码，此程序规范了英特尔成都的开发流程.(C#)</p>
 </dd>
 <dt>团队项目</dt>
 <dd>
-  <p><strong><a href="">Emotion for sign language</a>:</strong> 使用微软认知服务的表情识别，增加了手语识别的准确率.</p>
-  <p><strong><a href="https://github.com/ambleLou/ShijianWeChat">实兼公众号</a>:</strong> 微信服务号，实现兼职的发布与报名，我负责前端UI.</p>
+  <p><strong><a href="https://github.com/ambleLou/GraphView">GraphView</a>:</strong> 将微软内部的图数据库中间件GraphView在DocumentDB上进行了实现，我负责SQL语句的解析.</p>
+  <p><strong><a href="">Emotion for sign language</a>:</strong> 使用微软认知服务，利用表情识别对手语的结果进行调整，增加了识别的准确率.</p>
 </dd>
 <dt>其他项目</dt>
 <dd>
@@ -163,7 +176,7 @@
 </dl>
 <h2 id="extra-section-call-it-whatever-you-want">个人信息</h2>
 <ul>
-<li><p>技能: 熟练掌握<strong>C#</strong>/<strong>.Net</strong>/<strong>SQL Server</strong>/<strong>key-value store</strong>； 了解 前端开发/Shell/C/Java/Python/iOS开发</p>
+<li><p>技能: 熟练掌握<strong>C#</strong>/<strong>.Net</strong>/<strong>SQL Server</strong>/<strong>key-value store</strong>； 了解 JavaScript/Shell/C/Java/Python/iOS开发</p>
 </li>
 <li><p>课程: 人们一等奖学金/通过CET-4</p></li>
 <li><p>个人主页: <a href="https://github.com/ambleLou">https://github.com/ambleLou</a></p></li>
